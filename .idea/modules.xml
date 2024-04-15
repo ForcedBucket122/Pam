@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/obiektowe/interfejsy/interfejsy.iml" filepath="$PROJECT_DIR$/obiektowe/interfejsy/interfejsy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/obiektowe/kolekcje listy/kolekcje listy.iml" filepath="$PROJECT_DIR$/obiektowe/kolekcje listy/kolekcje listy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/obiektowe/konstruktory w java/konstruktory w java.iml" filepath="$PROJECT_DIR$/obiektowe/konstruktory w java/konstruktory w java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/obiektowe/listy i mapy/listy i mapy.iml" filepath="$PROJECT_DIR$/obiektowe/listy i mapy/listy i mapy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/obiektowe/obiekty i klasy/obiekty i klasy.iml" filepath="$PROJECT_DIR$/obiektowe/obiekty i klasy/obiekty i klasy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/paprotny.iml" filepath="$PROJECT_DIR$/.idea/paprotny.iml" />
+      <module fileurl="file://$PROJECT_DIR$/obiektowe/techniki przekazywania danych w java/techniki przekazywania danych w java.iml" filepath="$PROJECT_DIR$/obiektowe/techniki przekazywania danych w java/techniki przekazywania danych w java.iml" />
+    </modules>
+  </component>
+</project>
