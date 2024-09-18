@@ -14,9 +14,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="false"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
         android:entries="@array/beer_colors"
+        />
+    <Spinner
+        android:id="@+id/marka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:entries="@array/marki"
         />
     <Button
         android:layout_width="wrap_content"
@@ -31,8 +40,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/brands"
-        android:layout_alignLeft="@id/find_beer"
-        android:layout_below="@id/find_beer"
+        android:layout_alignLeft="@+id/find_beer"
+        android:layout_below="@+id/find_beer"
         android:layout_marginTop="18dp"
         android:text=""
         />

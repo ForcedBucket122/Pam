@@ -8,4 +8,10 @@
         <item>brązowe</item>
         <item>ciemne</item>
     </string-array>
+    <string-array name="marki">
+        <item>Kozel</item>
+        <item>Tyskie</item>
+        <item>Harnaś</item>
+        <item>Perła</item>
+    </string-array>
 </resources>
