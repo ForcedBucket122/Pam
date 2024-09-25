@@ -1,0 +1,5 @@
+relative layout:
+	gravity - ustawienie okreslonego elementu
+
+frame layout:
+	layout_gravity - sluzy do pozycjonowania elementow

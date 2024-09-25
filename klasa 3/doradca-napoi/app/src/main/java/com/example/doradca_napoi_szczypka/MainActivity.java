@@ -25,6 +25,6 @@ public class MainActivity extends AppCompatActivity{
             Spinner marka = (Spinner) findViewById(R.id.marka);
             String Marc = String.valueOf((marka.getSelectedItem()));
             String beerType = String.valueOf(color.getSelectedItem());
-            brands.setText(beerType+" "+Marc);
+            brands.setText(Marc+" "+beerType);
         }
 }
