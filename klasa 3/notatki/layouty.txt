@@ -3,3 +3,5 @@ relative layout:
 
 frame layout:
 	layout_gravity - sluzy do pozycjonowania elementow
+linearlayout
+	layout_weight

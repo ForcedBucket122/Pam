@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/first_view"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_green_dark"
+        />
+    <TextView
+        android:id="@+id/second_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kurs Android"
+        android:textSize="30sp"
+        android:layout_toLeftOf="@id/first_view"
+        android:layout_alignTop="@id/first_view" />
+
+    <TextView
+        android:id="@+id/third_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FrameLayout"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@id/first_view"
+        android:layout_alignBottom="@id/first_view"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/third_view"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14"
+                android:textSize="40sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
