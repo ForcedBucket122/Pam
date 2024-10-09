@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+array beer_colors
+array marki
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id brands
+id color
+id find_beer
+id marka
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string brands
+string find_beer
+style Base.Theme.DoradcaNapoiSzczypka
+style Theme.DoradcaNapoiSzczypka
+xml backup_rules
+xml data_extraction_rules

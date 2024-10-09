@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="beer_colors">
+        <item>jasne</item>
+        <item>bursztynowe</item>
+        <item>brązowe</item>
+        <item>ciemne</item>
+    </string-array>
+    <string-array name="marki">
+        <item>Kozel</item>
+        <item>Tyskie</item>
+        <item>Harnaś</item>
+        <item>Perła</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Doradca-Napoi-Szczypka</string>
+    <string name="brands"/>
+    <string name="find_beer">Odszukaj piwo!</string>
+    <style name="Base.Theme.DoradcaNapoiSzczypka" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.DoradcaNapoiSzczypka" parent="Base.Theme.DoradcaNapoiSzczypka"/>
+</resources>
