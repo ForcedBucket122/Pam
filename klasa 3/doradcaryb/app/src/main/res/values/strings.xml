@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">doradca-ryb</string>
+    <string name="odszukaj_rybe">Odszukaj rybe!</string>
+    <array name="rasa">
+        <item>Sumik</item>
+        <item>Karp</item>
+        <item>Karaś</item>
+        <item>Dorsz</item>
+    </array>
+    <array name="typ">
+        <item>karłowaty</item>
+        <item>karpiowaty</item>
+        <item>karasiowaty</item>
+        <item>różowy</item>
+    </array>
+</resources>
