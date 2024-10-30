@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">zasoby</string>
     <string name="monday">Poniedziałek</string>
+    <string name="rybka">Wspaniała ryba</string>
+    <string name="wow">Rekordowa ryba</string>
+    <string name="opis_rekord">Rekordzistą został Krzysztof Lewandowski z Lędzin, który złowił karpia o wadze 37,775 kg.</string>
+    <string name="opis">Karp – gatunek słodkowodnej ryby z rodziny karpiowatych. Hodowany i poławiany na dużą skalę jako ryba konsumpcyjna.</string>
 </resources>
