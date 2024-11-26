@@ -27,5 +27,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnClickWyslij(View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
-        EditText
+        Intent intent = new Intent(this, SecondActicity.class);
+        EditText tekst = findViewById(R.id.tekstIn);
+
+        int wyslij = Integer.parseInt(tekst.getText().toString());
+        intent.putExtra(SecondActicity.KEY_TEXT, wyslij); // Przekazanie liczby do drugiej aktywności
+        startActivity(intent);
+    }
+}
