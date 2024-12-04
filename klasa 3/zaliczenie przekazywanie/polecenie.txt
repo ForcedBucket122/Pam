@@ -1,0 +1,1 @@
+Stworz dwa pola edycyjne jedno dotyczące lancucha znakow drugie liczby całkowitej oraz przycisk który spowoduje przeslanie obu danych z pol edycyjnych do nowego activity
