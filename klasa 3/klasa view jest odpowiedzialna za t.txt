@@ -1,0 +1,1 @@
+klasa view jest odpowiedzialna za tworzenie kontrolek (pola edycyjne pola radio buton checkbox spinner itp) które pomagają w tworzeniu miedzy innymi formularzy
