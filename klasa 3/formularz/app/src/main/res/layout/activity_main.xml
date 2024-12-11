@@ -61,14 +61,14 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/woman"
                 android:layout_weight="1"
-                android:onClick=""
+                android:onClick="onGenderBtnClick"
                 android:text="Kobieta"/>
             <RadioButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/man"
                 android:layout_weight="1"
-                android:onClick=""
+                android:onClick="onGenderBtnClick"
                 android:text="Mężczyzna"/>
         </RadioGroup>
         <LinearLayout
@@ -84,10 +84,11 @@
                 android:text="Wykształcenie"/>
 
             <Spinner
+                android:id="@+id/edukacja"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/edukacja"
-                android:entries="@array/edukacjaTablica"/>
+                android:entries="@array/edukacjaTablica"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
@@ -95,7 +96,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Akceptuję regulamin"
-            android:onClick=""/>
+            android:onClick="zaznaczPoleWyboru"/>
 
         <Button
             android:layout_width="match_parent"
@@ -103,6 +104,7 @@
             android:text="Reset"
             android:onClick="ClearAll"/>
     </LinearLayout>
+
 
 
 </LinearLayout>
