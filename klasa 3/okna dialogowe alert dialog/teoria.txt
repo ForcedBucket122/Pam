@@ -1,0 +1,1 @@
+dialog to komunikacja z użytkownikiem w celu podjęcia przez niego decyzji. W android studio dialog ma postac małego okna najczęściej używamy klase alert dialog, umozliwia ona podanie tytułu dialogu liste wyboru lub przyciski inne klasy które sluza do budowy dialogu to date hiper dialog maly sluzy do wyeksponowania czasu
