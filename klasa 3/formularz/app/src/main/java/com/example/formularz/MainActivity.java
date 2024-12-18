@@ -1,5 +1,8 @@
 package com.example.formularz;
 
+import android.app.ActionBar;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,7 +22,7 @@ import androidx.core.view.WindowInsetsCompat;
 import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
+    AlertDialog.Builder dialogBuilder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,21 +40,50 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+        dialogBuilder = new AlertDialog.Builder(this);
+        dialogBuilder.setMessage("Czy na pewno chcesz wyczyscic formularz?");
+        dialogBuilder.setPositiveButton("tak", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                EditText login = findViewById(R.id.login);
+                EditText password = findViewById(R.id.password);
+                EditText pesel = findViewById(R.id.pesel);
+                EditText email = findViewById(R.id.email);
+
+                RadioButton m = findViewById(R.id.man);
+                RadioButton k = findViewById(R.id.woman);
+
+                CheckBox akceptuj = findViewById(R.id.regulamin);
+
+                Spinner wyksztalcenie = findViewById(R.id.edukacja);
+
+
+                login.setText("");
+                password.setText("");
+                pesel.setText("");
+                email.setText("");
+
+                m.setChecked(false);
+                k.setChecked(false);
+
+                akceptuj.setChecked(false);
+
+                wyksztalcenie.setSelection(0);
+
+                //reset wszystkiego
+            }
+        });
+        dialogBuilder.setNegativeButton("nie", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        dialogBuilder.create();
     }
     public void ClearAll(View view){
-        EditText login = findViewById(R.id.login);
-        EditText password = findViewById(R.id.password);
-        EditText pesel = findViewById(R.id.pesel);
-        EditText email = findViewById(R.id.email);
+        dialogBuilder.show();}
 
-        login.setText("");
-        password.setText("");
-        pesel.setText("");
-        email.setText("");
-
-        //reset wszystkiego
-
-    }
     public void onGenderBtnClick(View view){
         RadioButton m = findViewById(R.id.man);
         RadioButton k = findViewById(R.id.woman);

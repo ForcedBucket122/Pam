@@ -96,7 +96,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Akceptuję regulamin"
-            android:onClick="zaznaczPoleWyboru"/>
+            android:onClick="zaznaczPoleWyboru"
+            android:id="@+id/regulamin"/>
 
         <Button
             android:layout_width="match_parent"
