@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">formularz_nauka</string>
+    <array name="wyksztalcenie">
+        <item>Wybierz</item>
+        <item>Podstawowe</item>
+        <item>Średnie</item>
+        <item>Wyższe</item>
+    </array>
+</resources>
