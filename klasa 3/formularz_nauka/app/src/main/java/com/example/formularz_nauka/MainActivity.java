@@ -18,7 +18,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    AlertDialog.Builder dialogBuilder;
+    AlertDialog.Builder dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,53 +30,58 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             return insets;
         });
         Spinner spinner = findViewById(R.id.spinner);
-        ArrayAdapter<CharSequence> adapter =ArrayAdapter.createFromResource(
-                this,R.array.wyksztalcenie, android.R.layout.simple_spinner_item
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(
+                this, R.array.wyksztalcenie, android.R.layout.simple_spinner_item
         );
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
-        dialogBuilder= new AlertDialog.Builder(this);
-        dialogBuilder.setMessage("Czy na pewno chcesz wyczyscic formularz?");
-        dialogBuilder.setPositiveButton("Tak", (dialog, which) -> {
-            EditText login = findViewById(R.id.login);
-            EditText password = findViewById(R.id.password);
-            EditText pesel = findViewById(R.id.pesel);
-            EditText email = findViewById(R.id.email);
-
-            RadioButton m = findViewById(R.id.male);
-            RadioButton k = findViewById(R.id.female);
-
-            CheckBox akceptuj = findViewById(R.id.checkbox);
-
-//            Spinner wyksztalcenie = findViewById(R.id.spinner);
-
-
-            login.setText("");
-            password.setText("");
-            pesel.setText("");
-            email.setText("");
-
-            m.setChecked(false);
-            k.setChecked(false);
-
-            akceptuj.setChecked(false);
-
-            spinner.setSelection(0);
-        });
-        dialogBuilder.setNegativeButton("Nie", new DialogInterface.OnClickListener() {
+        dialog = new AlertDialog.Builder(this);
+        dialog.setTitle("Reset");
+        dialog.setMessage("Czy na pewno chcesz kontynuowac?");
+        dialog.setPositiveButton("tak", new DialogInterface.OnClickListener() {
 
             @Override
-            public void onClick(DialogInterface dialog, int i) {
+            public void onClick(DialogInterface dialog, int which) {
+                EditText login = findViewById(R.id.login);
+                EditText password = findViewById(R.id.password);
+                EditText pesel = findViewById(R.id.pesel);
+                EditText email = findViewById(R.id.email);
+
+                RadioButton m = findViewById(R.id.male);
+                RadioButton k = findViewById(R.id.female);
+
+                CheckBox akceptuj = findViewById(R.id.checkbox);
+
+                Spinner wyksztalcenie = findViewById(R.id.spinner);
+
+
+                login.setText("");
+                password.setText("");
+                pesel.setText("");
+                email.setText("");
+
+                m.setChecked(false);
+                k.setChecked(false);
+
+                akceptuj.setChecked(false);
+
+                wyksztalcenie.setSelection(0);
+
+                //reset wszystkiego
+            }
+        });
+        dialog.setNegativeButton("nie", new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
 
             }
         });
-        dialogBuilder.create();
-
+        dialog.create();
     }
-    public void Clear(View view){
-        dialogBuilder.show();
+    public void Clear(View view) {
+        dialog.show();
     }
 
     @Override
