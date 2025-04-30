@@ -1,0 +1,1 @@
+stworz formularz ktory bedzie skladal sie z pol imie nazwisko oraz data urodzenia, data ma sie wpisywac do formularza na podstawie datepickerdialog np. poprzez przycisk
