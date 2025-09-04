@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/pole1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/pole1"
+        android:inputType="textCapSentences"
+        android:textColorHint="#8D6E63"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/przycisk1"
+        android:text="@string/przycisk1"
+        android:layout_marginTop="10dp"
+        android:onClick="wypiszTekst"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tekst1"
+        android:text=""
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/jesiotr"
+        android:contentDescription="@string/fot1"/>
+
+    <ToggleButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggle_button"
+        android:textOff="@string/off"
+        android:textOn="@string/on"
+        android:onClick="wlaczony"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tekst2"
+        android:text="@string/napis1"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"/>
+
+     <Switch
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/switch1"
+         android:onClick="wlaczony_switch"
+         tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tekst3"
+        android:text="@string/napis2"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tekst4"
+        android:text="@string/dodatkowe_uslugi"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dostawa"
+        android:text="@string/dostawa"
+        android:textSize="12pt"
+        android:onClick="policz"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/platnosc"
+        android:text="@string/dostawa"
+        android:textSize="12pt"
+        android:onClick="policz"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/opakowanie"
+        android:text="@string/dostawa"
+        android:textSize="12pt"
+        android:onClick="policz"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tekst5"
+        android:text=""
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+T:System oceniania, program nauczania i przepisy bhp pracowni.
+1.Uczen otrzymuje ocene czastkowa na podstawie wartosci procentowych:
+	a) od 35% dop
+	b) od 50% dost
+	c) od 75% dobry
+	d) od 90% bdb
+	e) 100% i ponad podstawe programowa celujace
+2.Przy ocenach czastkowych wystepuja plusy i minusy
+
+3.Uczen ktory nie otrzyma w 1 terminie oceny czastkowej z powodu 
+nieobecnosci jest zobowiazany ja uzyskac w ciagu 2 tygodni od otrzymania tzw. nb.
+Jesli tego nie zrobi otrzymuje ocene ndst. Drugi termin jest ostateczny jesli 
+chodzi o uzyskana ocene nie ma mozliwosci jej poprawy
+
+4.Uczen ma prawo poprawic ocene ndst z 1 terminu jednakze ma na to 2 tygodnie od jej otrzymania.
+Nie liczac otrzymania tzw. nb patrz pkt 3
+
+5.Ocena semestralna i koncowa wystawiana jest na podstawie sredniej:
+-od 1,7 dop
+-od 2,51 dst
+-od 3,51 db
+-od 4,51 bdb
+-powyzej 5,5 konkursy i olimpiady cel
+
+6.Ocena poprawiona jest wpisywana obok pierwszej i wyciagana jest srednia.

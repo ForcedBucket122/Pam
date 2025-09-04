@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">widoki</string>
+    <string name="pole1">przykładowy tekst</string>
+    <string name="przycisk1">Wypisz tekst</string>
+    <string name="fot1">jesiotr</string>
+    <string name="off">Wyraź zgodę</string>
+    <string name="on">Wycofaj zgodę</string>
+    <string name="napis1">Czy wyrażasz zgodę na jesiotra?</string>
+    <string name="napis2">jakis napis</string>
+    <string name="dostawa">dostawa</string>
+    <string name="dodatkowe_uslugi">dodatkowe uslugi</string>
+</resources>
