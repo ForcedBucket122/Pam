@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">widoki</string>
+    <string name="pole1">przykładowy tekst</string>
+    <string name="przycisk1">Wypisz tekst</string>
+    <string name="fot1">jesiotr</string>
+    <string name="off">Wyraź zgodę</string>
+    <string name="on">Wycofaj zgodę</string>
+    <string name="napis1">Czy wyrażasz zgodę na jesiotra?</string>
+    <string name="napis2">jakis napis</string>
+    <string name="dostawa">Dostawa na adres</string>
+<!--    <string name="zaplata">do zapłaty dodatkowo 15 złotych</string>-->
+    <string name="platnosc">Płatność za pobraniem</string>
+    <string name="opakowanie">Ozdobne opakowanie</string>
+    <string name="dodatkowe_uslugi">Wybierz dodatkowe usługi do swojego zamówienia</string>
+    <string name="wyczysc_wszystko">Wyczysc wszystko</string>
+</resources>
