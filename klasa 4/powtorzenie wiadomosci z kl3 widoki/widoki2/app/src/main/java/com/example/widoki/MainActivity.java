@@ -1,11 +1,15 @@
 package com.example.widoki;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -91,6 +97,48 @@ public class MainActivity extends AppCompatActivity {
         TextView textView1 = findViewById(R.id.tekst1);
         TextView textView3 = findViewById(R.id.tekst3);
         TextView textView5 = findViewById(R.id.tekst5);
-        Ed
+        CheckBox dostawa = findViewById(R.id.dostawa);
+        CheckBox platnosc = findViewById(R.id.platnosc);
+        CheckBox opakowanie = findViewById(R.id.opakowanie);
+
+        editText.setText("");
+        textView1.setText("");
+        textView3.setText("");
+        textView5.setText("");
+
+        dostawa.setChecked(false);
+        platnosc.setChecked(false);
+        opakowanie.setChecked(false);
+    }
+
+    public void zaznaczona(View view) {
+        RadioGroup radioGroup = findViewById(R.id.radop_group);
+        int id = radioGroup.getCheckedRadioButtonId();
+        TextView textView = findViewById(R.id.tekst_kolor);
+
+        if (id == R.id.czerwony) {
+            textView.setTextColor(Color.parseColor("#FF0000"));
+        }else if(id==R.id.zielony){
+            textView.setTextColor(Color.parseColor("#00FF00"));
+        }else if (id==R.id.niebieski){
+            textView.setTextColor(Color.parseColor("#0000FF"));
+        }
+    }
+
+    public void sprawdzOdpowiedz(View view) {
+        String tekst1="Odpowiedz prawidłowa";
+        String tekst2="Odpowiedz błędna";
+        int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(this, tekst1, duration);
+        Toast toast2 = Toast.makeText(this, tekst2, duration);
+
+        Spinner kolor = findViewById(R.id.spinner);
+        String wybor = String.valueOf(kolor.getSelectedItem());
+
+        if(wybor.equals("zielony")){
+            toast.show();
+        }else{
+            toast2.show();
+        }
     }
 }

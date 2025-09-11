@@ -64,15 +64,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/tekst3"
         android:text=""
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"/>
+        android:textSize="10sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tekst4"
         android:text="@string/dodatkowe_uslugi"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_marginTop="10dp"/>
 
     <CheckBox
@@ -80,7 +79,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/dostawa"
         android:text="@string/dostawa"
-        android:textSize="12pt"
+        android:textSize="5pt"
         android:onClick="policz"/>
 
     <CheckBox
@@ -88,7 +87,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/platnosc"
         android:text="@string/platnosc"
-        android:textSize="12pt"
+        android:textSize="5pt"
         android:onClick="policz"/>
 
     <CheckBox
@@ -96,7 +95,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/opakowanie"
         android:text="@string/opakowanie"
-        android:textSize="12pt"
+        android:textSize="5pt"
         android:onClick="policz"/>
 
     <TextView
@@ -104,12 +103,72 @@
         android:layout_height="wrap_content"
         android:id="@+id/tekst5"
         android:text=""
-        android:textSize="25sp"
-        android:layout_marginTop="10dp"/>
+        android:textSize="15sp"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/wyczysc_wszystko"
         android:onClick="wyczysc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radop_group">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/czerwony"
+                android:text="czerwony"
+                android:onClick="zaznaczona"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zielony"
+                android:text="zielony"
+                android:onClick="zaznaczona"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/niebieski"
+                android:text="niebieski"
+                android:onClick="zaznaczona"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ten tekst zmieni kolor"
+                android:id="@+id/tekst_kolor"
+                />
+
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jaki kolor ma trawa?"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/opcjelisty"
+                android:id="@+id/spinner"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/przycisk2"
+                android:onClick="sprawdzOdpowiedz"
+                android:text="Sprawdz odpowiedz"/>
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

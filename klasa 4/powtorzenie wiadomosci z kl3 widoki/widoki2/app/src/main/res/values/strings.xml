@@ -13,4 +13,10 @@
     <string name="opakowanie">Ozdobne opakowanie</string>
     <string name="dodatkowe_uslugi">Wybierz dodatkowe usługi do swojego zamówienia</string>
     <string name="wyczysc_wszystko">Wyczysc wszystko</string>
+    <string-array name="opcjelisty">
+        <item>czerwony</item>
+        <item>zielony</item>
+        <item>niebieski</item>
+        <item>zolty</item>
+    </string-array>
 </resources>
