@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/radioGrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        tools:ignore="UselessParent">
+        <RadioButton
+            android:id="@+id/czerwony"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcja1"
+            android:onClick="zaznaczona"/>
+        <RadioButton
+            android:id="@+id/zielony"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcja2"
+            android:onClick="zaznaczona"/>
+        <RadioButton
+            android:id="@+id/niebieski"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcja3"
+            android:onClick="zaznaczona"/>
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tekst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ten tekst zmienia kolor. "
+        android:textSize="40sp"/>
+
+
+
+</LinearLayout>
