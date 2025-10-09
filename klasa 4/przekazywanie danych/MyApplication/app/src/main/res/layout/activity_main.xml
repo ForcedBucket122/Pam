@@ -9,22 +9,27 @@
     android:orientation="vertical">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="tekst"
+        android:hint="@string/tekst"
         android:inputType="text"
-        android:id="@+id/tekst"/>
+        android:id="@+id/tekst"
+        android:layout_marginTop="@dimen/_20dp"
+        android:textSize="@dimen/_44sp"/>
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="liczba"
+        android:hint="@string/liczba"
         android:inputType="number"
-        android:id="@+id/liczba"/>
+        android:id="@+id/liczba"
+        android:textSize="@dimen/_44sp"
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="wyslij"
-        android:id="@+id/wyslij"/>
+        android:text="@string/wyslij"
+        android:id="@+id/wyslij"
+        android:textSize="@dimen/_44sp"/>
 
 
 </LinearLayout>

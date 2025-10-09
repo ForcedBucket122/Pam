@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">formularz</string>
+    <string-array name="edukacjaTablica">
+        <item>Podstawowe</item>
+        <item>Średnie</item>
+        <item>Wyższe</item>
+    </string-array>
+</resources>

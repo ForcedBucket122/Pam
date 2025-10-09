@@ -12,6 +12,11 @@
         android:id="@+id/TView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"/>
+        android:textSize="@dimen/_44sp"/>
+    <TextView
+        android:id="@+id/NView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_44sp"/>
 
 </LinearLayout>
