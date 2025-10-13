@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     Button save;
     private String plec;
     private boolean zaakceptowano;
+    private Intent intent;
+    private String log;
+    private String pass;
+    private long pes;
+    private String ema;
+    private int id_wyksztalcenie;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,11 +103,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         dialogBuilder_save = new AlertDialog.Builder(this);
         dialogBuilder_save.setMessage("Czy na pewno chcesz zapisać dane?");
         dialogBuilder_save.setPositiveButton("Tak", (dialogInterface, i) -> {
-            Intent intent = new Intent(this, SecondActivity.class);
-            String log= String.valueOf(login.getText());
-            String pass= String.valueOf(password.getText());
-            int pes= Integer.parseInt(String.valueOf(pesel.getText()));
-            String ema= String.valueOf(email.getText());
+            intent = new Intent(this, SecondActivity.class);
+            log= String.valueOf(login.getText());
+            pass= String.valueOf(password.getText());
+            pes= Long.parseLong(String.valueOf(pesel.getText()));
+            ema= String.valueOf(email.getText());
+
+            intent.putExtra(SecondActivity.KEY_LOGIN, log);
+            intent.putExtra(SecondActivity.KEY_PASSWORD, pass);
+            intent.putExtra(SecondActivity.KEY_PESEL, pes);
+            intent.putExtra(SecondActivity.KEY_EMAIL, ema);
+            intent.putExtra(SecondActivity.KEY_PLEC, plec);
+            intent.putExtra(SecondActivity.KEY_WYKSZTALCENIE, wyksztalcenie.getItemIdAtPosition(id_wyksztalcenie));
+            intent.putExtra(SecondActivity.KEY_REGULAMIN, zaakceptowano);
+
+            startActivity(intent);
         });
         dialogBuilder_save.setNegativeButton("Nie", (dialogInterface, i) -> {
 
@@ -129,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
-
+        id_wyksztalcenie=position;
     }
 
     @Override
