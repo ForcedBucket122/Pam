@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<!--    1. animacje a Android studio tworzymy w zasobach w klasie anim-->
+<!--    2. animacje mają różne postacie np. zmianę określonej właściwości lub wykonanie ruchu np. obracanie, zanikanie, skalowanie.-->
+<!--    3. w animacji możemy ustawiać długość animacji lub dodawanie i odejmowanie przeźroczystości za pomocą wskaźnika alpha-->
+<!--    duration w ms-->
+<!--    alpha przezroczystosc-->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pilka"
+        android:layout_centerInParent="true"
+        android:id="@+id/pila"/>
+
+</RelativeLayout>
