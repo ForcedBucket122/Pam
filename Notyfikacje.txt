@@ -1,10 +1,8 @@
-Notyfikacje
-	1. Notyfikacja to inaczej powiadomienie, wiadomość która ma się wyswietlic poza interfejsem aplikacji i ma dostarczyć użytkownikowi przypomnienia lub aktualne informacje
-	2. Funkcje:
--setSmallIcon()? - Mała ikona: wymagana
--Nazwa aplikacji: podana przez system
--Sygnatura czasowa: podana przez system ale można ja zastapic: setWhen() lub ukryj
-za pomocą setShowWhen(false)
--Duza ikona: opcjonalna zwykle jest używana tylko do zdjęć kontaktow. Nie używaj go jako ikony aplikacji. Ustaw za pomocą setLargeIcon()
--Tytuł jest opcjonalny. Ustaw za pomocą setContentTitle()
--Tekst: opcjonalny; ustaw za pomocą: setContentText()
+stwórz projekt od tytólem album fotogradficzny według wytyczny
+- tytol album fotograficzny
+tytol zdjęcia
+zdjecie
+opis zdjęcia
+2X 
+zastosuj wszystkie zasoby
+na ocene wyższa niż cztery zaprogramuj w javie by udoskonalić album fotograficznyS
