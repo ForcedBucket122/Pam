@@ -66,11 +66,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Check linked devices", Toast.LENGTH_SHORT).show();
         }if(id == R.id.settings){
             Intent intent = new Intent(this, SettingsActivity.class);
-            String tekts = "tekst";
-            intent.putExtra(SettingsActivity.key, tekts);
             startActivity(intent);
-
-            Toast.makeText(this, "Go to settings", Toast.LENGTH_SHORT).show();
         }
         return  true;
     }

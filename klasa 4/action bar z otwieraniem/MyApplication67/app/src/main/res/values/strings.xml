@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Toolbar</string>
+    <string name="automatyczne_zapisywanie_zdjec">Automatyczne zapisywanie zdjęć</string>
+    <string-array name="dzwonki">
+        <item>dzwonek 1</item>
+        <item>dzwonek 2</item>
+        <item>dzwonek 3</item>
+        <item>dzwonek 4</item>
+    </string-array>
 </resources>
