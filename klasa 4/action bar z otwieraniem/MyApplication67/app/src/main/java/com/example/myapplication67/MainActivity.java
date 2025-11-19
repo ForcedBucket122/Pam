@@ -46,6 +46,24 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.tolbar);
         setSupportActionBar(toolbar);
 
+        Toolbar messengerToolbar = findViewById(R.id.messenger);
+        messengerToolbar.inflateMenu(R.menu.messenger_toolbar);
+        messengerToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                int id = item.getItemId();
+                if (id == R.id.open){
+                    Toast.makeText(MainActivity.this, "Create a new group", Toast.LENGTH_SHORT).show();
+                    return true;
+                }if(id == R.id.logo){
+                    Toast.makeText(MainActivity.this, "Go to Facebook", Toast.LENGTH_SHORT).show();
+                }
+                return false;
+            }
+        });
+
+
+
 
     }
 
@@ -58,7 +76,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if(id == R.id.group){
+        if(id == R.id.camera){
+            Toast.makeText(this, "Go to camera", Toast.LENGTH_SHORT).show();
+        }if(id == R.id.group){
             Toast.makeText(this, "Create a new group", Toast.LENGTH_SHORT).show();
         }if(id == R.id.broadcast){
             Toast.makeText(this, "Create a new broadcast", Toast.LENGTH_SHORT).show();

@@ -4,7 +4,7 @@
     <item
         android:title="Camera"
         android:id="@+id/camera"
-        android:icon="@drawable/outline_camera_24"
+        android:icon="@drawable/outline_camera_alt_24"
         app:showAsAction="ifRoom"/>
     <item
         android:title="Search"
