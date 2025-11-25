@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                     PendingIntent.FLAG_IMMUTABLE);
 
             Intent dislikeIntent = new Intent(this, DislikeActivity.class);
-            likeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            dislikeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             PendingIntent dislikePendingIntent = PendingIntent.getActivity(this, 0, intent,
                     PendingIntent.FLAG_IMMUTABLE);
 
