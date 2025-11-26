@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/udost_pnij"
+        android:id="@+id/udostepnij"
+        android:icon="@drawable/outline_share_24"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="     "
+        app:showAsAction="always"/>
+    <item
+        android:title="@string/ulubione"
+        android:id="@+id/ulubione"
+        android:icon="@drawable/outline_favorite_24"
+        app:showAsAction="always"/>
+    <item
+        android:title="   "
+        app:showAsAction="always"/>
+
+    <item
+        android:title="@string/edytuj"
+        android:id="@+id/edytuj"
+        android:icon="@drawable/outline_edit_24"
+        app:showAsAction="always"/>
+    <item
+        android:title="   "
+        
+        app:showAsAction="always"/>
+
+    <item
+        android:title="@string/usu"
+        android:id="@+id/usun"
+        android:icon="@drawable/outline_delete_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="@string/kopiuj"
+        android:id="@+id/kopiuj"
+        android:icon="@drawable/outline_content_copy_24" />
+
+    <item
+        android:title="@string/przenie"
+        android:id="@+id/przenies"
+        android:icon="@drawable/outline_drive_file_move_24"/>
+
+    <item
+        android:title="@string/ukryj"
+        android:id="@+id/ukryj"
+        android:icon="@drawable/outline_hide_image_24"/>
+
+    <item
+        android:title="@string/ustaw_jako_tapet"
+        android:id="@+id/ustaw_jako_tapete" />
+
+    <item
+        android:title="@string/szczeg_y"
+        android:icon="@drawable/outline_details_24"
+        android:id="@+id/szczegoly" />
+
+</menu>

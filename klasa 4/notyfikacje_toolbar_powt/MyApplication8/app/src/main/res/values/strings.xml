@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name"> Wiadomości</string>
+    <string name="udost_pnij">Udostępnij</string>
+    <string name="ulubione">Ulubione</string>
+    <string name="edytuj">Edytuj</string>
+    <string name="usu">Usuń</string>
+    <string name="kopiuj">Kopiuj</string>
+    <string name="przenie">Przenieś</string>
+    <string name="ukryj">Ukryj</string>
+    <string name="ustaw_jako_tapet">Ustaw jako tapetę</string>
+    <string name="szczeg_y">Szczegóły</string>
+</resources>

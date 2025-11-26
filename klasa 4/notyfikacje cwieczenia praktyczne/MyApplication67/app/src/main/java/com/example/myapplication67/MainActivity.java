@@ -6,10 +6,9 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Icon;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -21,7 +20,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    private Button wyslij;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,13 +31,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
         NotificationChannel channel = new NotificationChannel("podst",
                 "Podstawowa", NotificationManager.IMPORTANCE_HIGH);
         channel.setDescription("Podstawowa notyfikacja");
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
         notificationManager.createNotificationChannel(channel);
 
-        wyslij = findViewById(R.id.przycisk);
+        Button wyslij = findViewById(R.id.przycisk);
         wyslij.setOnClickListener(v -> {
             Intent intent = new Intent(this, SecondActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -52,15 +51,15 @@ public class MainActivity extends AppCompatActivity {
                     PendingIntent.FLAG_IMMUTABLE);
 
             Intent dislikeIntent = new Intent(this, DislikeActivity.class);
-            likeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            dislikeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             PendingIntent dislikePendingIntent = PendingIntent.getActivity(this, 0, intent,
                     PendingIntent.FLAG_IMMUTABLE);
 
             NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "podst")
                     .setSmallIcon(R.drawable.icon_mess)
                     .setColor(ContextCompat.getColor(this, R.color.black))
-                    .setContentTitle("Rafał i Łojek")
-                    .setContentText("Kocham UE")
+                    .setContentTitle("Rafał i łojek")
+                    .setContentText("")
                     .setPriority(NotificationCompat.PRIORITY_HIGH)
                     .setContentIntent(pendingIntent)
                     .setAutoCancel(true)
@@ -74,7 +73,5 @@ public class MainActivity extends AppCompatActivity {
 
             NotificationManagerCompat.from(this).notify(0,builder.build());
         });
-
-
     }
 }
