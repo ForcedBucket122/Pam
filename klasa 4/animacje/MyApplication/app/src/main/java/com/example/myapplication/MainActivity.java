@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity{
 
         final ImageView pilka = (ImageView) findViewById(R.id.pila);
         final Animation anim = AnimationUtils.loadAnimation(this, R.anim.bg_animation_second);
-
         anim.setFillAfter(true);
 
         ScaleAnimation scaleAnimation = getScaleAnimation(pilka, anim);

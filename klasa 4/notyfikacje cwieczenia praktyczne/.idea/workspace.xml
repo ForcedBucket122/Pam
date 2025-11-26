@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fa953c0f-9d3e-460b-9e1c-7f4e7b552abd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../action bar/MyApplication67/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../notyfikacje_i_toolbar_nauka/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../notyfikacje_i_toolbar_nauka/app/src/main/res/drawable/outline_account_circle_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../notyfikacje_i_toolbar_nauka/app/src/main/res/drawable/outline_open_in_new_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../notyfikacje_i_toolbar_nauka/app/src/main/res/drawable/outline_settings_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../notyfikacje_i_toolbar_nauka/app/src/main/res/menu/bottom_toolbar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../notyfikacje_i_toolbar_nauka/app/src/main/res/menu/toolbar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../action bar z otwieraniem/MyApplication67/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../action bar z otwieraniem/MyApplication67/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../action bar/MyApplication67/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../action bar/MyApplication67/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notyfikacja praktyka/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../notyfikacja praktyka/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notyfikacja praktyka/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../notyfikacja praktyka/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication67/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyApplication67/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication67/app/src/main/java/com/example/myapplication67/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyApplication67/app/src/main/java/com/example/myapplication67/MainActivity.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="35yjGtzwCTSNZqX4S6PJpUgZIxe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/SZKOLA/Pam/klasa 4/notyfikacje cwieczenia praktyczne"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa953c0f-9d3e-460b-9e1c-7f4e7b552abd" name="Changes" comment="" />
+      <created>1764089112826</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764089112826</updated>
+    </task>
+    <servers />
+  </component>
+</project>
