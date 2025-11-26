@@ -1,0 +1,1 @@
+stworz notyfikacje otrzymania wiadomości sms w waszym smartfonie która będzie mieć priorytet medium i będzie wywolywana automatycznie, następnie stworz w dolnej części ekranu toolbar dot. galerii smartfonow
