@@ -13,12 +13,19 @@
 <!--        android:layout_width="310dp"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        style="?android:progressBarStyleLarge"/>-->
-
-<!--    <ProgressBar-->
-<!--        android:layout_width="310dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
-<!--        android:progress="40" />-->
+    <SeekBar
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sBar"
+        android:min="0"
+        android:max="100"/>
+    <ProgressBar
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pBar"
+        android:min="0"
+        android:max="100"/>
 <!--    <ProgressBar-->
 <!--        android:layout_width="310dp"-->
 <!--        android:layout_height="wrap_content"-->
@@ -31,6 +38,18 @@
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:min="0"
         android:max="200"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="5"
+        android:id="@+id/rate"
+        android:stepSize="0.01"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tekst"/>
 <!--    <ProgressBar-->
 <!--        android:layout_width="310dp"-->
 <!--        android:layout_height="wrap_content"-->

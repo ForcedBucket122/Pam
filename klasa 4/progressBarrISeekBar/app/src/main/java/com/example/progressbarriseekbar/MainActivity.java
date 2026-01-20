@@ -3,6 +3,9 @@ package com.example.progressbarriseekbar;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.widget.ProgressBar;
+import android.widget.RatingBar;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,18 +26,40 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        ProgressBar progressBar = findViewById(R.id.progress_horizontal);
+        ProgressBar pBar = findViewById(R.id.pBar);
+        SeekBar sBar = findViewById(R.id.sBar);
+        RatingBar rBar = findViewById(R.id.rate);
+        TextView textView = findViewById(R.id.tekst);
+        rBar.setOnRatingBarChangeListener((ratingBar, v, b) -> textView.setText(String.valueOf(v)));
 
-        new CountDownTimer(20000, 100) { // 20 sekund, krok co 100ms
+        sBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onTick(long millisUntilFinished) {
-                int progress = (int) ((20000 - millisUntilFinished) / 100);
-                progressBar.setProgress(progress);
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                pBar.setProgress(i);
             }
 
             @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        ProgressBar progressBar = findViewById(R.id.progress_horizontal);
+
+        new CountDownTimer(20000, 100) {
+            @Override
             public void onFinish() {
                 progressBar.setProgress(200);
+            }
+            @Override
+            public void onTick(long l) {
+                int progress = (int) ((20000-l)/100);
+                progressBar.setProgress(progress);
             }
         }.start();
 
