@@ -4,14 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FragmentB"
+    android:background="@android:color/holo_blue_bright"
     >
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Wysłany tekst"
         android:id="@+id/wyswietl"
-        android:textColor="@color/white"
         android:textSize="25dp"
         android:gravity="center"/>
 
