@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         SeekBar sBar = findViewById(R.id.sBar);
         RatingBar rBar = findViewById(R.id.rate);
         TextView textView = findViewById(R.id.tekst);
-        rBar.setOnRatingBarChangeListener((ratingBar, v, b) -> textView.setText(String.valueOf(v)));
+        ProgressBar progressBar = findViewById(R.id.progress_horizontal);
 
         sBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -49,19 +49,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ProgressBar progressBar = findViewById(R.id.progress_horizontal);
-
         new CountDownTimer(20000, 100) {
             @Override
             public void onFinish() {
                 progressBar.setProgress(200);
             }
+
             @Override
             public void onTick(long l) {
-                int progress = (int) ((20000-l)/100);
+                int progress = Math.toIntExact(((20000 - l) / 100));
                 progressBar.setProgress(progress);
             }
         }.start();
+
+        rBar.setOnRatingBarChangeListener((ratingBar, v, b) -> textView.setText(String.valueOf(v)));
 
     }
 }
