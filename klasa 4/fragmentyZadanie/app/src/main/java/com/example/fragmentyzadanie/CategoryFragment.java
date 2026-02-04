@@ -29,7 +29,12 @@ public class CategoryFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 bundle.putString("kategoria",String.valueOf(listView.getItemAtPosition(position)) );
-                fragment.setArguments(bundle);
+                NotesFragment notesFragment  = new NotesFragment();
+                notesFragment.setArguments(bundle);
+                requireActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment, notesFragment)
+                        .commit();
             }
         });
 

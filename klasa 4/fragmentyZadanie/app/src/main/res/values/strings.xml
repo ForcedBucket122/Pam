@@ -8,4 +8,28 @@
         <item>Dom</item>
         <item>Hobby</item>
     </array>
+
+    <array name="notatkiPraca">
+        <item>Spotkanie z klientem</item>
+        <item>Raport miesięczny</item>
+        <item>Kubek</item>
+    </array>
+
+    <string name="Spotkanie_z_klientem"> Bardzo wazne spotkanie z Markiem Maruchom o 19:00 w pubie</string>
+
+    <array name="notatkiSzkola">
+        <item>Zaliczenie z fragmentow</item>
+        <item>Sprawdzian z ciągów arytmetycznych</item>
+        <item>zadanie domowe z polskiego</item>
+    </array>
+    <array name="notatkiDom">
+        <item>Oproznic zmywarke</item>
+        <item>Podlac kwiatki</item>
+        <item>Uzupelnic Arsenal (Piwo)</item>
+    </array>
+    <array name="notatkiHobby">
+        <item>Trening</item>
+        <item>Wypic piwo</item>
+        <item>Wyjsc na rower</item>
+    </array>
 </resources>
