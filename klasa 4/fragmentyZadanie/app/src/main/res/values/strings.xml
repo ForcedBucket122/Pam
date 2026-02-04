@@ -14,9 +14,6 @@
         <item>Raport miesięczny</item>
         <item>Kubek</item>
     </array>
-
-    <string name="Spotkanie_z_klientem"> Bardzo wazne spotkanie z Markiem Maruchom o 19:00 w pubie</string>
-
     <array name="notatkiSzkola">
         <item>Zaliczenie z fragmentow</item>
         <item>Sprawdzian z ciągów arytmetycznych</item>
@@ -32,4 +29,19 @@
         <item>Wypic piwo</item>
         <item>Wyjsc na rower</item>
     </array>
+
+
+    <string name="spotkanie_z_klientem">Bardzo wazne spotkanie z Markiem Maruchom o 19:00 w pubie</string>
+    <string name="raport_miesieczny">Zrob raport wydatkow z miesiaca styczen</string>
+    <string name="kubek">Znajdz kubek Pana profesora</string>
+    <string name="zaliczenie_z_fragmentow">Bardzo ważne a przede wszystkim trudne zaliczenie. Naucz się wszystkiego.</string>
+    <string name="sprawdzian_ciagi">Sprawdzan z całego działu, najważniejsze zadania: książka strona 167</string>
+    <string name="polski">zrób schemat argumentacyjny</string>
+    <string name="zmywarka">zmywarka umyła, trzeba ją opróżnić</string>
+    <string name="kwiatki">podlej kwiatki w całym domu</string>
+    <string name="arsenal">Kończy się piwo kup 2 kraty</string>
+    <string name="trening">zrób trening klaty</string>
+    <string name="piwo">Jak kupisz 2 kraty piwa to wypij 1 a drugą zostaw na jutro</string>
+    <string name="rower">idz na rower bo cardio samo sie nie zrobi</string>
+
 </resources>

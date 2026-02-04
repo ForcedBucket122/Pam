@@ -25,17 +25,14 @@ public class CategoryFragment extends Fragment {
         ListView listView = view.findViewById(R.id.list);
         Bundle bundle = new Bundle();
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                bundle.putString("kategoria",String.valueOf(listView.getItemAtPosition(position)) );
-                NotesFragment notesFragment  = new NotesFragment();
-                notesFragment.setArguments(bundle);
-                requireActivity().getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.fragment, notesFragment)
-                        .commit();
-            }
+        listView.setOnItemClickListener((parent, view1, position, id) -> {
+            bundle.putString("kategoria",String.valueOf(listView.getItemAtPosition(position)) );
+            NotesFragment notesFragment  = new NotesFragment();
+            notesFragment.setArguments(bundle);
+            requireActivity().getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment, notesFragment)
+                    .commit();
         });
 
         return view;

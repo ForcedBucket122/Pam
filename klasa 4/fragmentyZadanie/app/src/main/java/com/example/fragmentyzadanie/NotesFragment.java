@@ -14,10 +14,26 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 
 public class NotesFragment extends Fragment {
+    private static final Map<String, Integer> MAPA_TRESCI = new HashMap<String, Integer>() {{
+        put("Spotkanie z klientem", R.string.spotkanie_z_klientem);
+        put("Raport miesięczny", R.string.raport_miesieczny);
+        put("Kubek", R.string.kubek);
+        put("Zaliczenie z fragmentow", R.string.zaliczenie_z_fragmentow);
+        put("Sprawdzian z ciągów arytmetycznych", R.string.sprawdzian_ciagi);
+        put("zadanie domowe z polskiego", R.string.polski);
+        put("Oproznic zmywarke", R.string.zmywarka);
+        put("Podlac kwiatki", R.string.kwiatki);
+        put("Uzupelnic Arsenal (Piwo)", R.string.arsenal);
+        put("Trening", R.string.trening);
+        put("Wypic piwo", R.string.piwo);
+        put("Wyjsc na rower", R.string.rower);
+    }};
 
     private String[] notatkiTytul;
     @Override
@@ -54,7 +70,18 @@ public class NotesFragment extends Fragment {
         listView.setOnItemClickListener((parent, view1, position, id) -> {
             String tytul = listView.getItemAtPosition(position).toString();
             bundle.putString("Tytul", tytul);
-            bundle.putString("Tresc", tytul);
+
+            Integer Id = MAPA_TRESCI.get(tytul);
+            String tresc;
+
+            if (Id != null) {
+                tresc = getResources().getString(Id);
+            } else {
+                tresc = "";
+            }
+
+
+            bundle.putString("Tresc", tresc);
             bundle.putString("Kategoria", kategoria);
             detailFragment.setArguments(bundle);
             requireActivity().getSupportFragmentManager()
@@ -62,17 +89,15 @@ public class NotesFragment extends Fragment {
                     .replace(R.id.fragment, detailFragment)
                     .commit();
         });
+
+
         CategoryFragment categoryFragment = new CategoryFragment();
         ImageButton back = view.findViewById(R.id.goBack);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                requireActivity().getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.fragment, categoryFragment)
-                        .commit();
-            }
-        });
+
+        back.setOnClickListener(v -> requireActivity().getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment, categoryFragment)
+                .commit());
         return view;
     }
 }
