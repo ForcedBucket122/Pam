@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="zapisz_preferencje">Zapisz preferencje</string>
+    <string name="zapisz">Zapisz</string>
+    <string name="od_wierz">Odświerz</string>
+    <string name="wyczy">Wyczyść</string>
+    <string name="wiek">wiek</string>
+    <string name="imie">imie</string>
+</resources>
