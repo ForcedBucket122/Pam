@@ -42,7 +42,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/imie"
-        android:inputType="textEmailAddress"
         android:layout_gravity="center"
         android:minHeight="48dp"
         android:id="@+id/imie"/>
@@ -51,4 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/zapisaneDane"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/uruchomienia"/>
+
 </LinearLayout>
