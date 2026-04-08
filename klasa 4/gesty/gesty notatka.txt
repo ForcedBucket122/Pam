@@ -1,0 +1,9 @@
+1.Do rozpoznawania gestow w android studio sluza klasy:
+a) gesture detector
+b) view pager
+	obie zawierają rozne interfejsy i metody 
+2.wskaznik to fizyczyny obiekt ktorego można uzywac do interakcji z aplikacja.
+Na urządzeniach mobilnych wskaźnikiem sa najczęściej ekrany dotykowe do których używa się rysika lub palca.
+3.wyswietlacz do urządzenie wejściowe które umozliwia koordynacje ze wskaźnikiem (klawiatura nie jest wskaźnikiem)
+4.zdarzenie wskaźnika opisuje interakcje niskiego poziomu polegajaca na uzyciu co najmniej 1 wskaźnika z aplikacja w danycm momencie np. przeciagniecie palcem w gore w dol, nacisniecie wywoluje zdarzenie 
+5. gest to sekwencja zdarzeń wskaźnika które zaczyna się od pojedynczego zadania az do zbiorowego
