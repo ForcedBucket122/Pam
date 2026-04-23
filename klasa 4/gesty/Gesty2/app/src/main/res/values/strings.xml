@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Gesty</string>
+    <string name="witamy_w_2_widoku">Witamy w 2 widoku</string>
+    <string name="przesun_w_lewo">przesun w lewo</string>
+    <string name="witamy_w_3_widoku">Witamy w 3 widoku</string>
+    <string name="witamy_w_1_widoku">Witamy w 1 widoku</string>
+
+    <string name="red">RED</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
+</resources>
