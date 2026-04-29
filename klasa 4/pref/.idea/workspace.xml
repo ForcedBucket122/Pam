@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7db9928-3cf6-4d09-875a-5e2637543d0e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../sharedPreference/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zaliczenieFragmenty/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fragmentyZadanie/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fragmentyZadanie/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sharedPreference/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sharedPreference/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sharedPreference/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sharedPreference/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zaliczenieFragmenty/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zaliczenieFragmenty/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zaliczenieFragmenty/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zaliczenieFragmenty/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ForcedBucket122"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ForcedBucket122/Pam.git",
+    "accountId": "93ff370d-01b7-425e-94b3-12d22f4e676d"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="3Bg3kuuQqqeWt7eJphtmDFrdpqT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/SZKOLA/Pam/klasa 4/pref"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7db9928-3cf6-4d09-875a-5e2637543d0e" name="Changes" comment="" />
+      <created>1774897032990</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774897032990</updated>
+    </task>
+    <servers />
+  </component>
+</project>
