@@ -4,8 +4,32 @@
     android:layout_height="match_parent"
     android:id="@+id/main2"
     android:orientation="vertical">
-    <TextView
+    <EditText
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imie"
+        android:hint="imie"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nazwisko"
+        android:hint="nazwisko"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/klasa"
+        android:hint="klasa"
+        android:inputType="textCapSentences"/>
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tekst1"/>
+        android:id="@+id/dodaj1"
+        android:text="Dodaj"
+        android:onClick="dodaj"/>
+
 </LinearLayout>

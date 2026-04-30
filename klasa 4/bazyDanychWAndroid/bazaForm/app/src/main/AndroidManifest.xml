@@ -13,6 +13,9 @@
         android:theme="@style/Theme.BazaForm">
         <activity android:name=".DrugaAktywnosc"
             android:exported="true"/>
+        <activity android:name=".WypiszDane"
+            android:exported="true"/>
+        <activity android:name=".DodajDoBazy"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

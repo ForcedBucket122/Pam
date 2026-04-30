@@ -1,7 +1,10 @@
 package com.example.bazaform;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -20,23 +23,28 @@ public class DrugaAktywnosc extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.druga_aktywnosc);
 
-        Bundle bundle = getIntent().getExtras();
-        TextView textView = findViewById(R.id.tekst1);
-        String imie = bundle.getString("imie");
-        String nazwisko = bundle.getString("nazwisko");
-        String klasa = bundle.getString("klasa");
 
-        asystent.dodaj(imie, nazwisko, klasa);
-        Cursor k = asystent.wypiszCalosc();
+        Button button = findViewById(R.id.dodaj1);
+        button.setOnClickListener(v -> {
+            dodaj();
+        });
 
-        while (k.moveToNext()){
-            int id = k.getInt(0);
-            String imie2 = k.getString(1);
-            String nazwisko2 = k.getString(2);
-            String klasa2 = k.getString(3);
+    }
 
-            textView.setText(String.format("%s\n%d. %s %s %s", textView.getText(), id, imie2, nazwisko2, klasa2));
+    public void dodaj(){
+        EditText im = findViewById(R.id.imie);
+        EditText naz = findViewById(R.id.nazwisko);
+        EditText kl =findViewById(R.id.klasa);
 
-        }
+        String im2 = im.getText().toString();
+        String naz2 = naz.getText().toString();
+        String kl2 = kl.getText().toString();
+
+        Intent intent = new Intent(this, DodajDoBazy.class);
+
+        intent.putExtra("imie", im2);
+        intent.putExtra("nazwisko", naz2);
+        intent.putExtra("klasa", kl2);
+        startActivity(intent);
     }
 }
