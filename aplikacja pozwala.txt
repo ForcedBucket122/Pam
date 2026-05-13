@@ -1,0 +1,57 @@
+aplikacja pozwala:
+dodawać notatki
+edytować je
+usuwac
+oznaczac jak ważne
+filtrować po kategoriach
+wszystkie dane zapisują się lokalnie w sqlite 
+
+1.kazda notatka posiada:
+tytul 
+tresc 
+date
+kategorie
+status "ważne"
+
+tabela sqlite:
+Create table notes(
+	id integer primary key autoincrement,
+	title text,
+	content text,
+	category text,
+	important integer,
+	created_at text
+);
+
+2.wyświetlane przez:
+recyclerView,
+custom adapter
+
+3.gesty:
+swipe w lewo:
+usuwanie notatki
+
+swipe w prawo:
+oznaczenie jako wazna
+
+long press:
+edycja notatki
+
+4.wyszukiwarka:
+filtrowanie notatek po kategorii
+
+5.kategorie
+np.:
+szkola
+praca
+prywatne
+
+technologie:
+java
+sqlite
+recyclerview
+gesturedetector
+itemtouchhelper
+cardview
+
+layout dostosować do polecenia zadania
