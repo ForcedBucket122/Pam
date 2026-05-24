@@ -36,7 +36,6 @@ public class Asystent extends SQLiteOpenHelper {
     }
     public Cursor wypiszCalosc(){
         SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * from UCZEN",null);
-        return cursor;
+        return db.rawQuery("SELECT * from UCZEN",null);
     }
 }

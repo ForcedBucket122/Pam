@@ -41,7 +41,6 @@ public class Asystent extends SQLiteOpenHelper {
         String licznik = "SELECT count(*) FROM UCZEN";
         Cursor k2 = db.rawQuery(licznik,null);
         k2.moveToFirst();
-        int ilosc =k2.getInt(0);
-        return ilosc;
+        return k2.getInt(0);
     }
 }
